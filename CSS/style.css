@@ -67,6 +67,16 @@ body {
     font-weight: bold;
 }
 
+#navLi ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#navLi ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 
 /* ******************************* Main Section starts here ****************************** */
 
@@ -226,6 +236,9 @@ body {
     padding: 1em 1em 2em 1em;
     margin: 1em 1em 1em 1em;
     width: 17em;
+    box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
+    -webkit-box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
+    -moz-box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
 }
 
 .projectBoxes h4 {
@@ -235,4 +248,97 @@ body {
 
 .projectBoxes img {
     width: 4em;
+}
+
+
+/* ******************************* Contact Section starts here ****************************** */
+
+#contactSection {
+    text-align: center;
+    padding: 4em 0;
+    background-color: blanchedalmond;
+}
+
+#contactSection h2 {
+    font-size: 2em;
+}
+
+#contactSection>p {
+    padding: 2em 0;
+    font-size: 1.2em;
+}
+
+#contactBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contactBoxes {
+    padding: 1em 1em 0em 1em;
+    margin: 1em;
+    width: 17em;
+}
+
+.contactBoxes img {
+    width: 3em;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.contactBoxes h4 {
+    font-size: 1.5em;
+}
+
+.contactBoxes p {
+    font-size: 1em;
+    padding: 1em 0;
+}
+
+
+/* CV Download section starts here */
+
+#CVSection {
+    padding: 3em 0;
+    text-align: center;
+}
+
+#CVSection h4 {
+    font-size: 1.5em;
+}
+
+#CVFlexBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em 0;
+}
+
+#CVText {
+    width: 50%;
+    text-align: center;
+}
+
+#CVDownload {
+    width: 50%;
+}
+
+#CVDownload a img {
+    width: 5em;
+}
+
+
+/* Footer area starts here */
+
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
 }
