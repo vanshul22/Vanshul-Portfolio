@@ -8,5 +8,58 @@
 
 body {
     /* Default value in body. */
-    font-size: 5rem;
+    font-size: 1rem;
+}
+
+.universalPadding {
+    /*Padding for all containers\boxes */
+    padding: 0em 10em 0 10em;
+}
+
+
+/* targeting header */
+
+#header {
+    overflow: auto;
+    background-color: blue;
+}
+
+#headerLeft {
+    float: left;
+    padding: 0.5em 0em;
+}
+
+#headerRight {
+    float: right;
+    padding: 0.5em 0em;
+}
+
+
+/* Navbar starts here */
+
+#navBar {
+    background-color: black;
+    color: white;
+}
+
+#navLogo {
+    width: 30%;
+    display: inline-block;
+}
+
+#navLi {
+    width: 60%;
+    display: inline-block;
+}
+
+#navLi ul {
+    padding: 1em 0 1em 2em;
+}
+
+#navLi ul li {
+    display: inline-block;
+    padding: 0em 2em 0em 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
 }
