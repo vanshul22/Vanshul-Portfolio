@@ -196,3 +196,43 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
+
+/* ******************************* Project Section starts here ****************************** */
+
+#projectSection {
+    text-align: center;
+    padding: 4em 0em 4em 0em;
+}
+
+#projectSection h2 {
+    font-size: 2em;
+}
+
+#projectSection>p {
+    font-size: 1.2em;
+    padding: 1em 0;
+}
+
+#projectBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projectBoxes {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1em 1em 2em 1em;
+    margin: 1em 1em 1em 1em;
+    width: 17em;
+}
+
+.projectBoxes h4 {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.projectBoxes img {
+    width: 4em;
+}
