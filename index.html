@@ -9,7 +9,7 @@
 
     <!-- Added CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
-    <!-- Favicon Here -->
+    <!-- Favicon 4 line Here -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
@@ -24,25 +24,31 @@
             <div id="headerRight">lorem ipsum</div>
         </div>
         <nav id="navBar" class="universalPadding">
-            <div id="navLogo">Logo</div>
+            <div id="navLogo">
+                <a href="/"><img src="./Img/Icons/Nav-icon/Portfolio.png" alt="error"></a>
+            </div>
             <div id="navLi">
                 <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#profileSection">About</a></li>
-                    <li><a href="#contactSection">Contact US</a></li>
-                    <li><a href="#CVSection">CV</a></li>
-                    <li><a href="#projectBox">Projects</a></li>
+                    <!-- Mobile view cross btn -->
+                    <li id="crossMark">
+                        <a href="javascript:void(0)" onclick="closeMenu()"><img src="./Img/Icons/Nav-icon/Cross-mark.png" alt="cross"></a>
+                    </li>
+                    <li><a href="#header" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#profileSection" onclick="closeMenu()">About</a></li>
+                    <li><a href="#contactSection" onclick="closeMenu()">Contact US</a></li>
+                    <li><a href="#CVSection" onclick="closeMenu()">CV</a></li>
+                    <li><a href="#projectBox" onclick="closeMenu()">Projects</a></li>
                 </ul>
             </div>
+            <span id="hamBurger"><img src="./Img/Icons/Nav-icon/Burger.png" alt="error" onclick="openMenu()"></span>
         </nav>
     </header>
     <!-- Main Section starts here -->
     <section id="mainSection" class="universalPadding">
-        <div id="smallHeading">Lorem ipsum dolor sit.</div>
+        <div id="smallHeading">Link the Future</div>
         <div id="mainHeadingContainer">
-            <h1>Lorem, ipsum dolor.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br> Ipsam temporibus soluta eos beatae esse odit sunt iure, est minus hic?
+            <h1>Creative Web Developer</h1>
+            <p>
             </p>
         </div>
     </section>
@@ -50,19 +56,20 @@
     <!-- Profile Section starts here -->
     <section id="profileSection" class="universalPadding">
         <div id="profileHeading">
-            <h3> Hello I'm </h3>
+            <h3> Hello I'm Vanshul Kesharwani</h3>
             <h2> Web Designer & Developer. </h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui veniam natus est minus, nesciunt aspernatur necessitatibus corporis voluptatum fugit tempora amet quia neque reprehenderit accusamus aliquam iste sit ab vero.</p>
+            <p>A goal getter, as well as a self-starter seeks the position of Intern Web Developer. Bringing Semester's of Coding Experience in HTML, CSS, JavaScript, Python, Django, Git and Linux OS to helping in creating great Web apps that delivers quality
+                cyber competition.</p>
         </div>
         <div id="profileDP">
-            <!-- <img src="./Img/profile.png" alt="reload page"> -->
+            <img src="./Img/profile.png" alt="reload page">
         </div>
     </section>
 
     <!-- ShowBox -->
     <section id="showSection" class="universalPadding">
         <div id="showImg">.
-            <!-- <img src="./Img/show_image.jpg" alt="Img"> -->
+            <img src="./Img/show_image.jpg" alt="Img">
         </div>
         <div id="showHeading">
             <div id="showSmallHeading">Lorem ipsum dolor sit.</div>
@@ -71,27 +78,27 @@
             <div id="checkBox">
                 <div class="halfCheckBox">
                     <img class="check" src="./Img/Icons/Check-circle.gif" alt="Check">
-                    <span class="checkText"> Lorem ipsum1 </span>
+                    <span class="checkText">HTML</span>
                 </div>
                 <div class="halfCheckBox">
                     <img class="check" src="./Img/Icons/Check-circle.gif" alt="Check">
-                    <span class="checkText"> Lorem ipsum2 </span>
+                    <span class="checkText"> JavaScript </span>
                 </div>
                 <div class="halfCheckBox">
                     <img class="check" src="./Img/Icons/Check-circle.gif" alt="Check">
-                    <span class="checkText"> Lorem ipsum3 </span>
+                    <span class="checkText"> CSS </span>
                 </div>
                 <div class="halfCheckBox">
                     <img class="check" src="./Img/Icons/Check-circle.gif" alt="Check">
-                    <span class="checkText"> Lorem ipsum4 </span>
+                    <span class="checkText"> Python </span>
                 </div>
                 <div class="halfCheckBox">
                     <img class="check" src="./Img/Icons/Check-circle.gif" alt="Check">
-                    <span class="checkText"> Lorem ipsum5 </span>
+                    <span class="checkText"> Django </span>
                 </div>
                 <div class="halfCheckBox">
                     <img class="check" src="./Img/Icons/Check-circle.gif" alt="Check">
-                    <span class="checkText"> Lorem ipsum6 </span>
+                    <span class="checkText"> Git </span>
                 </div>
             </div>
         </div>
@@ -104,37 +111,48 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quia iusto at ex ipsam delectus necessitatibus in cum molestias magnam.</p>
         <div id="projectBox">
             <div class="projectBoxes">
-                <img src="./Img/Icons/Html.gif" alt="HTML">
-                <h4>Lorem1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                <a href=" " target="_blank">
+                    <img src="./Img/Icons/Html.gif" alt="HTML">
+                    <h4>Lorem1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                </a>
             </div>
             <div class="projectBoxes">
-                <img src="./Img/Icons/Python.gif" alt="Python">
-                <h4>Lorem2</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                <a href=" " target="_blank">
+                    <img src="./Img/Icons/Python.gif" alt="Python">
+                    <h4>Lorem2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                </a>
             </div>
             <div class="projectBoxes">
-                <img src="./Img/Icons/Github.gif" alt="GitHub">
-                <h4>Lorem3</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                <a href=" " target="_blank">
+                    <img src="./Img/Icons/Github.gif" alt="GitHub">
+                    <h4>Lorem3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                </a>
             </div>
             <div class="projectBoxes">
-                <img src="./Img/Icons/Javascript.gif" alt="JS">
-                <h4>Lorem4</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                <a href=" " target="_blank">
+                    <img src="./Img/Icons/Javascript.gif" alt="JS">
+                    <h4>Lorem4</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                </a>
             </div>
             <div class="projectBoxes">
-                <img src="./Img/Icons/QR-code.gif" alt="QR">
-                <h4>Lorem5</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                <a href=" " target="_blank">
+                    <img src="./Img/Icons/QR-code.gif" alt="QR">
+                    <h4>Lorem5</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                </a>
             </div>
             <div class="projectBoxes">
-                <img src="./Img/Icons/Developer-mode.gif" alt="DV mode">
-                <h4>Lorem6</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                <a href=" " target="_blank">
+                    <img src="./Img/Icons/Developer-mode.gif" alt="DV mode">
+                    <h4>Lorem6</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, perspiciatis.</p>
+                </a>
             </div>
         </div>
-
     </section>
 
     <!-- Contact us Box -->
@@ -182,10 +200,8 @@
     </footer>
 
     <!-- Added JavaScript -->
-    <script src="./JS/script.js"></script>
+    <script src="./JS/script.js "></script>
 
 </body>
-
-</html>
 
 </html>

@@ -19,7 +19,7 @@ body {
 }
 
 
-/* ******************************* targeting header starts here  ****************************** */
+/* ******************************* Header starts here  ****************************** */
 
 #header {
     overflow: auto;
@@ -42,39 +42,64 @@ body {
 #navBar {
     background-color: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navLogo {
     width: 30%;
-    display: inline-block;
+}
+
+#navLogo img {
     cursor: pointer;
+    filter: invert(100%);
+    width: 4em;
+    padding: 0.5em 0em 0em 0em;
 }
 
 #navLi {
     width: 60%;
-    display: inline-block;
 }
 
 #navLi ul {
-    padding: 1em 0 1em 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #navLi ul li {
-    display: inline-block;
-    padding: 0em 2em 0em 0;
-    cursor: pointer;
     font-size: 1.2em;
     font-weight: bold;
+    list-style-type: none;
 }
 
 #navLi ul li a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 #navLi ul li a:hover {
-    text-decoration: underline;
     font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 1px solid white;
+}
+
+#hamBurger {
+    text-align: end;
+    filter: invert(100%);
+}
+
+#hamBurger img {
+    width: 2em;
+    cursor: pointer;
+    display: none;
+}
+
+#crossMark {
+    display: none;
 }
 
 
@@ -82,7 +107,7 @@ body {
 
 #mainSection {
     background-color: blueviolet;
-    /* background: url("../Img/mainContainer.jpg"); */
+    background: url("../Img/mainContainer.jpg");
     width: 100%;
     height: 87.3vh;
     background-repeat: no-repeat;
@@ -109,7 +134,7 @@ body {
 
 #mainHeadingContainer p {
     font-size: 1.2em;
-    padding-top: 2.5em;
+    padding-top: 1em;
 }
 
 
@@ -162,6 +187,7 @@ body {
     width: 25em;
     margin: 0;
     display: inline-block;
+    border-radius: 30px;
 }
 
 #showHeading {
@@ -200,6 +226,9 @@ body {
 .halfCheckBox {
     display: flex;
     align-items: center;
+    width: 50%;
+    margin-bottom: 0.4em;
+    flex-wrap: wrap;
 }
 
 .checkText {
@@ -239,6 +268,11 @@ body {
     box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
     -webkit-box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
     -moz-box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
+}
+
+.projectBoxes a {
+    color: black;
+    text-decoration: none;
 }
 
 .projectBoxes h4 {
@@ -296,7 +330,7 @@ body {
 }
 
 
-/* CV Download section starts here */
+/* ******************************* CV Download section starts here ****************************** */
 
 #CVSection {
     padding: 3em 0;
@@ -329,7 +363,7 @@ body {
 }
 
 
-/* Footer area starts here */
+/* ******************************* Footer area starts here ****************************** */
 
 #footer {
     background-color: black;
@@ -341,4 +375,204 @@ body {
 #footer a {
     text-decoration: none;
     color: white;
+}
+
+
+/* ******************************* Responsive for 1000 Px ****************************** */
+
+@media only screen and (max-width:1400px) {
+    .halfCheckBox {
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .universalPadding {
+        padding-left: 5em !important;
+        padding-right: 5em !important;
+    }
+    .contactBoxes {
+        padding: 1em 0em 0em 0em;
+        margin: 0em;
+        width: 15em;
+    }
+    .halfCheckBox {
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .universalPadding {
+        padding-left: 3em !important;
+        padding-right: 3em !important;
+    }
+    #mainHeadingContainer h1 {
+        font-size: 2.2em;
+    }
+    #showHeading {
+        padding: 4em 0em 4em 4em;
+    }
+    .halfCheckBox {
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #showImg img {
+        width: 19em;
+    }
+    #showSmallHeading {
+        font-size: 1.3em;
+    }
+    #mainHeadingContainer h1 {
+        font-size: 1.8em;
+    }
+    #profileHeading {
+        width: 52%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    /* Mobile hamburger style */
+    #navLi ul {
+        display: none;
+    }
+    #hamBurger img {
+        display: inline-block;
+    }
+    #hamBurger {
+        padding-left: 14em;
+    }
+    #crossMark {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #navLi {
+        width: 70%;
+        background-color: #5c2133de;
+        position: absolute;
+        height: 100vh;
+        top: 0px;
+        left: -70%;
+        transition: all 0.5s ease;
+    }
+    #navLi ul {
+        display: block;
+    }
+    #navLi ul li {
+        padding: 1em;
+        text-align: center;
+    }
+    #profileHeading {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    #profileDP {
+        width: 100%;
+    }
+    #showSection {
+        flex-wrap: wrap;
+    }
+    #showImg {
+        padding-top: 4em;
+        width: 100%;
+    }
+    #showHeading {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    #profileSection {
+        font-size: 1em;
+    }
+    #showHeading {
+        padding: 4em 0em 4em 0em;
+    }
+    .halfCheckBox {
+        flex-wrap: nowrap;
+    }
+    #profileHeading p {
+        text-align: justify;
+    }
+    footer {
+        font-size: 0.8em;
+        padding: 0.8em 0 0.8em 0 !important;
+    }
+    #hamBurger {
+        padding-left: 10em;
+    }
+    #mainHeadingContainer h1 {
+        font-size: 1.4em;
+    }
+    #smallHeading {
+        padding-left: 2em;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .universalPadding {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+    #headerLeft {
+        float: none;
+        text-align: center;
+    }
+    #headerRight {
+        float: none;
+        text-align: center;
+    }
+    #navLogo {
+        width: 37%;
+    }
+    #smallHeading {
+        padding-left: 0;
+        text-align: center;
+    }
+    #mainHeadingContainer h1 {
+        font-size: 1em;
+    }
+    #mainHeadingContainer {
+        text-align: center;
+    }
+    #showImg img {
+        width: 10em;
+    }
+    #showHeading {
+        text-align: center;
+    }
+    #showHeading h2 {
+        font-size: 1.5em;
+    }
+    footer {
+        font-size: 0.8em;
+        padding: 0.8em 0 0.8em 0 !important;
+    }
+    .halfCheckBox {
+        width: 100%;
+        text-align: center;
+        padding-left: 3em;
+    }
+    #hamBurger {
+        padding-left: 6em;
+    }
+}
+
+@media only screen and (max-width:200px) {
+    #showImg img {
+        width: 9em;
+    }
+    #checkBox {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    footer {
+        font-size: 0.8em;
+        padding: 0.8em 0 0.8em 0 !important;
+    }
+    #hamBurger {
+        padding-left: 3em;
+    }
 }
