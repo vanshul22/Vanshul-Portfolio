@@ -2,7 +2,7 @@
 Website Name - PortFolio
 Name : Vanshul Kesharwani
 Date : 11/04/2022
-Version : 6.3.1
+Version : 6.3.2
 Email : vkvanshulkesharwani54@gmail.com
 Description : My portFolio.
 */
@@ -13,5 +13,4 @@ function openMenu() {
 // Function to close menu
 function closeMenu() {
     document.getElementById("navLi").style.left = "-70%";
-
 };

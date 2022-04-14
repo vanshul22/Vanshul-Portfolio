@@ -23,7 +23,7 @@ body {
 
 #header {
     overflow: auto;
-    background-color: blue;
+    background-color: #124559;
 }
 
 #headerLeft {
@@ -146,7 +146,9 @@ body {
     padding: 4em 0em 4em 0em;
     font-size: 1.2em;
     background-color: antiquewhite;
-    border: 2px solid black;
+    background-image: url("../Img/Profile-background-light.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 #profileHeading {
@@ -176,6 +178,9 @@ body {
 #showSection {
     display: flex;
     background-color: rgb(209, 223, 223);
+    background-image: url("../Img/Skill-background-light.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 #showImg {
@@ -244,6 +249,9 @@ body {
 #projectSection {
     text-align: center;
     padding: 4em 0em 4em 0em;
+    /* background-image: url("../Img/Profile-background-light.jpg"); */
+    background-position: center;
+    background-size: cover;
 }
 
 #projectSection h2 {
@@ -267,9 +275,9 @@ body {
     padding: 1em 1em 2em 1em;
     margin: 1em 1em 1em 1em;
     width: 17em;
-    box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
     -webkit-box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
     -moz-box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
+    box-shadow: 7px -7px 49px -29px rgba(0, 0, 0, 0.94);
 }
 
 .projectBoxes a {
@@ -292,7 +300,10 @@ body {
 #contactSection {
     text-align: center;
     padding: 4em 0;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
+    background-image: url("../Img/Contact-us.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 #contactSection h2 {
@@ -342,6 +353,10 @@ body {
 #CVSection {
     padding: 3em 0;
     text-align: center;
+    background-image: url("../Img/CV-black.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
 }
 
 #CVSection h4 {
@@ -367,6 +382,7 @@ body {
 
 #CVDownload a img {
     width: 5em;
+    border-radius: 20%;
 }
 
 
@@ -575,9 +591,12 @@ body {
         align-items: flex-start;
         flex-direction: column;
     }
-    footer {
-        font-size: 0.8em;
+    #footer {
+        font-size: 0.7em;
         padding: 0.8em 0 0.8em 0 !important;
+    }
+    .halfCheckBox {
+        padding-left: 0em;
     }
     #hamBurger {
         padding-left: 3em;
