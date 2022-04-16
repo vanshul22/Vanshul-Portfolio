@@ -168,8 +168,9 @@ body {
 }
 
 #profileDP img {
-    max-width: 8em;
+    max-width: 10em;
     height: auto;
+    border-radius: 50%;
 }
 
 
