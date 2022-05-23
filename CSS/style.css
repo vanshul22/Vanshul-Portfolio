@@ -516,6 +516,7 @@ body {
     }
     .halfCheckBox {
         flex-wrap: nowrap;
+        width: 100%;
     }
     #profileHeading p {
         text-align: justify;
